@@ -8,27 +8,27 @@
 </head>
 <body>
 
-    <header class="w-screen p-2 flex bg-sky-200">
-        <h1>
-
-            Brian Adams Blog
-        </h1>
-        <div id="nav-menu" class="hidden absolute top-full right-5 md:sticky md:flex md:top-0 md:right-0"> 
-            <nav class="list-none flex gap-3">
-                <li>Blogs</li>
-                <li>Merchandise</li>
-                <li>About me</li>
+    <header class="w-screen p-2 flex justify-between items-center px-4 bg-sky-200 shadow-md relative">
+        <div>
+            <img src="../img/main-logo.png" alt="" class="w-80 h-16 ">
+        </div>
+        <div id="nav-menu" class="hidden absolute top-full right-7 p-3 rounded md:sticky md:flex md:top-0 md:right-0 min-w-[300px] bg-slate-50 md:bg-transparent"> 
+            <nav class="list-none md:flex block gap-5">
+                <li class="font-semibold text-lg py-2 hover:bg-sky-300 hover:text-white rounded p-2 px-2">Blogs</li>
+                <li class="font-semibold text-lg py-2 hover:bg-sky-300 hover:text-white rounded p-2 px-2">Merchandise</li>
+                <li class="font-semibold text-lg py-2 hover:bg-sky-300 hover:text-white rounded p-2 px-2">About me</li>
             </nav>
         </div>
-        <button id="hamburger" class="flex md:hidden flex-col gap-1.5">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
+        <button id="hamburger" class="absolute top-5 right-7 md:hidden">
+            <span class="hamburger-line block origin-top-left"></span>
+            <span class="hamburger-line block"></span>
+            <span class="hamburger-line block origin-bottom-left"></span>
         </button>
     </header>
     <main>
         <h3>Hi, Brian is here.</h3>
 
     </main>
+    <script src="../js/ham.js"></script>
 </body>
 </html>
